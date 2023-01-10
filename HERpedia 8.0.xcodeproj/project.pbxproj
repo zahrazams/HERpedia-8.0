@@ -14,6 +14,10 @@
 		CDC01D45296DC0A100EE4D6C /* HERpedia_8_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D43296DC0A100EE4D6C /* HERpedia_8_0.xcdatamodeld */; };
 		CDC01D47296DC0A400EE4D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC01D46296DC0A400EE4D6C /* Assets.xcassets */; };
 		CDC01D4A296DC0A400EE4D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC01D48296DC0A400EE4D6C /* LaunchScreen.storyboard */; };
+		CDC01D56296DD75D00EE4D6C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D55296DD75D00EE4D6C /* OnboardingViewController.swift */; };
+		CDC01D59296DDD0D00EE4D6C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D58296DDD0D00EE4D6C /* UIView+Extension.swift */; };
+		CDC01D5B296DDDD900EE4D6C /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D5A296DDDD900EE4D6C /* OnboardingSlide.swift */; };
+		CDC01D5D296DE20700EE4D6C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D5C296DE20700EE4D6C /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		CDC01D46296DC0A400EE4D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC01D49296DC0A400EE4D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC01D4B296DC0A400EE4D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC01D55296DD75D00EE4D6C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CDC01D58296DDD0D00EE4D6C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CDC01D5A296DDDD900EE4D6C /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		CDC01D5C296DE20700EE4D6C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 		CDC01D39296DC0A100EE4D6C /* HERpedia 8.0 */ = {
 			isa = PBXGroup;
 			children = (
+				CDC01D57296DDCE100EE4D6C /* Extensions */,
+				CDC01D53296DD72400EE4D6C /* CustomViews */,
+				CDC01D52296DD71900EE4D6C /* Views */,
+				CDC01D51296DD71200EE4D6C /* Models */,
 				CDC01D3A296DC0A100EE4D6C /* AppDelegate.swift */,
 				CDC01D3C296DC0A100EE4D6C /* SceneDelegate.swift */,
 				CDC01D3E296DC0A100EE4D6C /* ViewController.swift */,
@@ -68,6 +80,46 @@
 				CDC01D43296DC0A100EE4D6C /* HERpedia_8_0.xcdatamodeld */,
 			);
 			path = "HERpedia 8.0";
+			sourceTree = "<group>";
+		};
+		CDC01D51296DD71200EE4D6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDC01D5A296DDDD900EE4D6C /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDC01D52296DD71900EE4D6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDC01D54296DD73700EE4D6C /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDC01D53296DD72400EE4D6C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CDC01D54296DD73700EE4D6C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CDC01D55296DD75D00EE4D6C /* OnboardingViewController.swift */,
+				CDC01D5C296DE20700EE4D6C /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CDC01D57296DDCE100EE4D6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDC01D58296DDD0D00EE4D6C /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC01D5B296DDDD900EE4D6C /* OnboardingSlide.swift in Sources */,
+				CDC01D59296DDD0D00EE4D6C /* UIView+Extension.swift in Sources */,
 				CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */,
+				CDC01D5D296DE20700EE4D6C /* OnboardingCollectionViewCell.swift in Sources */,
 				CDC01D45296DC0A100EE4D6C /* HERpedia_8_0.xcdatamodeld in Sources */,
+				CDC01D56296DD75D00EE4D6C /* OnboardingViewController.swift in Sources */,
 				CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */,
 				CDC01D3D296DC0A100EE4D6C /* SceneDelegate.swift in Sources */,
 			);
