@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2DEE7A2971B4AC00E4A22E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DEE792971B4AC00E4A22E /* ProfileViewController.swift */; };
 		CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D3A296DC0A100EE4D6C /* AppDelegate.swift */; };
 		CDC01D3D296DC0A100EE4D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D3C296DC0A100EE4D6C /* SceneDelegate.swift */; };
 		CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D3E296DC0A100EE4D6C /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2DEE792971B4AC00E4A22E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CDC01D37296DC0A100EE4D6C /* HERpedia 8.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HERpedia 8.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC01D3A296DC0A100EE4D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC01D3C296DC0A100EE4D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC01D74296E778E00EE4D6C /* Profile.storyboard */,
+				CD2DEE792971B4AC00E4A22E /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				CDC01D59296DDD0D00EE4D6C /* UIView+Extension.swift in Sources */,
 				CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */,
 				CDC01D5D296DE20700EE4D6C /* OnboardingCollectionViewCell.swift in Sources */,
+				CD2DEE7A2971B4AC00E4A22E /* ProfileViewController.swift in Sources */,
 				CDC01D45296DC0A100EE4D6C /* HERpedia_8_0.xcdatamodeld in Sources */,
 				CDC01D56296DD75D00EE4D6C /* OnboardingViewController.swift in Sources */,
 				CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */,
