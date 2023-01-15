@@ -93,12 +93,52 @@
                     <view key="view" contentMode="scaleToFill" id="MiY-us-Igs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signinup" translatesAutoresizingMaskIntoConstraints="NO" id="WII-0R-9Qz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVx-uE-0zh">
+                                <rect key="frame" x="112" y="247.5" width="190" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="peR-Yo-l4J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Begin Quiz">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which STEM field are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-bL-wNm">
+                                <rect key="frame" x="32" y="200" width="350" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="WII-0R-9Qz" firstAttribute="top" secondItem="MiY-us-Igs" secondAttribute="top" id="0Z5-4M-ReS"/>
+                            <constraint firstAttribute="bottom" secondItem="WII-0R-9Qz" secondAttribute="bottom" id="1VC-lt-4OO"/>
+                            <constraint firstItem="FVx-uE-0zh" firstAttribute="leading" secondItem="MiY-us-Igs" secondAttribute="leading" constant="112" id="Cn4-rU-7ha"/>
+                            <constraint firstAttribute="trailing" secondItem="WII-0R-9Qz" secondAttribute="trailing" id="RsV-dj-5wD"/>
+                            <constraint firstAttribute="trailing" secondItem="T6N-bL-wNm" secondAttribute="trailing" constant="32" id="ZeM-cd-TUz"/>
+                            <constraint firstItem="T6N-bL-wNm" firstAttribute="top" secondItem="MiY-us-Igs" secondAttribute="top" constant="200" id="gYi-iI-QZ1"/>
+                            <constraint firstItem="T6N-bL-wNm" firstAttribute="leading" secondItem="MiY-us-Igs" secondAttribute="leading" constant="32" id="liX-JZ-4Pg"/>
+                            <constraint firstAttribute="trailing" secondItem="FVx-uE-0zh" secondAttribute="trailing" constant="112" id="rYJ-YY-Nu3"/>
+                            <constraint firstItem="FVx-uE-0zh" firstAttribute="top" secondItem="T6N-bL-wNm" secondAttribute="bottom" constant="15" id="xPO-EV-SRk"/>
+                            <constraint firstItem="WII-0R-9Qz" firstAttribute="leading" secondItem="MiY-us-Igs" secondAttribute="leading" id="zfY-qt-KwG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lls-Zt-xdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="710"/>
+            <point key="canvasLocation" x="969.56521739130437" y="709.82142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YWh-6w-pI3">
@@ -108,9 +148,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signinup" translatesAutoresizingMaskIntoConstraints="NO" id="pqw-wV-HXw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signinup" translatesAutoresizingMaskIntoConstraints="NO" id="pqw-wV-HXw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aby" translatesAutoresizingMaskIntoConstraints="NO" id="aQ4-PS-V3y">
                                 <rect key="frame" x="57" y="12" width="300" height="300"/>
@@ -147,7 +186,11 @@
                         <constraints>
                             <constraint firstItem="aQ4-PS-V3y" firstAttribute="top" secondItem="hz8-g3-jLI" secondAttribute="top" constant="12" id="8Kz-02-JRW"/>
                             <constraint firstItem="rDk-wj-G0m" firstAttribute="leading" secondItem="hz8-g3-jLI" secondAttribute="leading" constant="57" id="FqH-eH-7ch"/>
+                            <constraint firstItem="pqw-wV-HXw" firstAttribute="top" secondItem="hz8-g3-jLI" secondAttribute="top" id="HvH-Xa-4Lr"/>
+                            <constraint firstAttribute="bottom" secondItem="pqw-wV-HXw" secondAttribute="bottom" id="Kpg-tv-Sob"/>
                             <constraint firstItem="aQ4-PS-V3y" firstAttribute="leading" secondItem="hz8-g3-jLI" secondAttribute="leading" constant="57" id="MwP-VZ-SHh"/>
+                            <constraint firstItem="pqw-wV-HXw" firstAttribute="leading" secondItem="hz8-g3-jLI" secondAttribute="leading" id="N1k-De-jmu"/>
+                            <constraint firstAttribute="trailing" secondItem="pqw-wV-HXw" secondAttribute="trailing" id="RiW-QG-cbY"/>
                             <constraint firstAttribute="trailing" secondItem="rDk-wj-G0m" secondAttribute="trailing" constant="57" id="irY-eG-E5A"/>
                             <constraint firstItem="rDk-wj-G0m" firstAttribute="top" secondItem="aQ4-PS-V3y" secondAttribute="bottom" id="nMm-Ly-5iK"/>
                             <constraint firstAttribute="trailing" secondItem="aQ4-PS-V3y" secondAttribute="trailing" constant="57" id="x1a-Sg-Nsx"/>
