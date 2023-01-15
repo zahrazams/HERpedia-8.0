@@ -8,17 +8,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Blog View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="BlogViewController" customModule="HERpedia_8_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk4-dz-4Zk">
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
+                                <connections>
+                                    <segue destination="J7W-wf-TnE" kind="embed" id="yTb-qo-Z2K"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-4L-QWF">
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
+                                <connections>
+                                    <segue destination="gLD-V5-8X4" kind="embed" id="IH9-Ob-xWm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Iig-4L-QWF" secondAttribute="bottom" id="2TF-he-A6H"/>
+                            <constraint firstItem="Kk4-dz-4Zk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7zc-xT-2QP"/>
+                            <constraint firstItem="Iig-4L-QWF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Nsj-hO-nC1"/>
+                            <constraint firstAttribute="bottom" secondItem="Kk4-dz-4Zk" secondAttribute="bottom" id="QtC-3Z-WsJ"/>
+                            <constraint firstItem="Iig-4L-QWF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dii-d3-IxW"/>
+                            <constraint firstItem="Kk4-dz-4Zk" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hhF-ld-2jw"/>
+                            <constraint firstItem="Kk4-dz-4Zk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kQm-LU-mYh"/>
+                            <constraint firstItem="Iig-4L-QWF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lKg-9S-iRL"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3uB-Ok-WTF"/>
+                    <navigationItem key="navigationItem" id="3uB-Ok-WTF">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="wg7-y0-ur1"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="FDF-JQ-KF6">
+                            <rect key="frame" x="159.5" y="5.5" width="95" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Quiz"/>
+                                <segment title="Blog"/>
+                            </segments>
+                            <connections>
+                                <action selector="switchViews:" destination="Y6W-OH-hqX" eventType="valueChanged" id="dYj-5m-AN6"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="firstView" destination="Kk4-dz-4Zk" id="Veb-tE-7IF"/>
+                        <outlet property="secondView" destination="Iig-4L-QWF" id="mLu-PD-uij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,9 +86,177 @@
             </objects>
             <point key="canvasLocation" x="57.971014492753625" y="-2.0089285714285712"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="goh-cV-xyT">
+            <objects>
+                <viewController id="J7W-wf-TnE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MiY-us-Igs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lls-Zt-xdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="710"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YWh-6w-pI3">
+            <objects>
+                <viewController id="gLD-V5-8X4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hz8-g3-jLI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signinup" translatesAutoresizingMaskIntoConstraints="NO" id="pqw-wV-HXw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aby" translatesAutoresizingMaskIntoConstraints="NO" id="aQ4-PS-V3y">
+                                <rect key="frame" x="57" y="12" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8KF-BE-SOc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jasmine" translatesAutoresizingMaskIntoConstraints="NO" id="rDk-wj-G0m">
+                                <rect key="frame" x="57" y="312" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Zhc-Is-7S7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guu-GG-3zn">
+                                <rect key="frame" x="57" y="12" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="CUD-Mq-11g" kind="presentation" id="pno-1x-gdy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8f-Ap-294">
+                                <rect key="frame" x="57" y="312" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="RfS-o5-eVE" kind="presentation" id="Nbc-Vy-CYp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aQ4-PS-V3y" firstAttribute="top" secondItem="hz8-g3-jLI" secondAttribute="top" constant="12" id="8Kz-02-JRW"/>
+                            <constraint firstItem="rDk-wj-G0m" firstAttribute="leading" secondItem="hz8-g3-jLI" secondAttribute="leading" constant="57" id="FqH-eH-7ch"/>
+                            <constraint firstItem="aQ4-PS-V3y" firstAttribute="leading" secondItem="hz8-g3-jLI" secondAttribute="leading" constant="57" id="MwP-VZ-SHh"/>
+                            <constraint firstAttribute="trailing" secondItem="rDk-wj-G0m" secondAttribute="trailing" constant="57" id="irY-eG-E5A"/>
+                            <constraint firstItem="rDk-wj-G0m" firstAttribute="top" secondItem="aQ4-PS-V3y" secondAttribute="bottom" id="nMm-Ly-5iK"/>
+                            <constraint firstAttribute="trailing" secondItem="aQ4-PS-V3y" secondAttribute="trailing" constant="57" id="x1a-Sg-Nsx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7B9-J0-Ls1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.8695652173915" y="-2.0089285714285712"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nm7-xp-NiK">
+            <objects>
+                <viewController id="CUD-Mq-11g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JeJ-AQ-1dm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Damage of Indonesia's Fauna &amp; Flora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WH-ew-3FU">
+                                <rect key="frame" x="5" y="20" width="404" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Spd-fn-eVg">
+                                <rect key="frame" x="20" y="48" width="378" height="698"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Being the 14th largest country, Indonesia is not only inhabited by a large population of humans but also by a high number of animal and plant life. Referred to as fauna and flora, these two elements are essential to the existence of an environment. They serve the purpose of maintaining ecological balance, expanding local economies, and contributing to the visual value of a certain place. This applies to Indonesia, as it is a country known for its diverse species of animals and beautiful natural landmarks. However, as time goes by, factors that harm Indonesia’s fauna and flora start to emerge at an alarmingly fast pace, posing an issue that threatens the environment of the country. One of these factors includes deforestation, which is harming Indonesia’s fauna and flora as it led to the deaths of many animals and destroyed plantations as well. 
+When it comes to fauna, a victim of this is the orangutan, which continues to suffer precipitous declines from deforestation as far as decreasing by 75%. The Sumatran orangutan is classified as “Critically Endangered” by the IUCN whereas the Borneo orangutan is classified as “Threatened”. The United Nations has declared the current situation of the remaining orangutans a "conservation emergency." One of the primary reasons for orangutan extinction is habitat destruction caused by massive deforestation. The Sumatran tiger, the only surviving species of Indonesian tiger, is also a victim of this damage. One of the most immediate threats to their survival is the destruction of critical habitats caused by deforestation. Decreasing by 16.6%, there are an estimated 400 to 600 Sumatran tigers left in the wild. These destructions of habitat leads to the destruction of the natural flora left in Indonesia that they are known for. As of 2020, Indonesia lost 115,459 hectares (285,300 acres) of forest cover. To worsen things for Indonesia's
+environment, forests make up 52.1% of Indonesia, so this loss takes up the majority of their flora. 
+Other than Fauna &amp; Flora International (FFI) working with Indonesia’s Ministry of Forestry, as citizens, we could also take part in this too. Taking part does not necessarily imply doing huge things or spending a lot of money. To conserve Indonesia’s fauna and flora from further damage, we could start with small things like reducing the usage of wildlife-related products and not supporting companies that perform deforestation for their land. In addition, with the usage of social media, we can spread awareness regarding this issue. Through these actions, hopefully, the future of Indonesia’s fauna and flora can be saved and significantly improved.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SpF-V2-uEw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7WH-ew-3FU" firstAttribute="top" secondItem="JeJ-AQ-1dm" secondAttribute="top" constant="20" id="6UO-8C-fUu"/>
+                            <constraint firstItem="Spd-fn-eVg" firstAttribute="leading" secondItem="SpF-V2-uEw" secondAttribute="leading" constant="20" id="Cm5-ti-dUb"/>
+                            <constraint firstAttribute="trailing" secondItem="7WH-ew-3FU" secondAttribute="trailing" constant="5" id="Ndh-jg-28I"/>
+                            <constraint firstItem="SpF-V2-uEw" firstAttribute="trailing" secondItem="Spd-fn-eVg" secondAttribute="trailing" constant="16" id="YJl-xG-DUu"/>
+                            <constraint firstItem="SpF-V2-uEw" firstAttribute="bottom" secondItem="Spd-fn-eVg" secondAttribute="bottom" id="h57-dY-M15"/>
+                            <constraint firstItem="7WH-ew-3FU" firstAttribute="leading" secondItem="JeJ-AQ-1dm" secondAttribute="leading" constant="5" id="kfa-5O-NRt"/>
+                            <constraint firstItem="Spd-fn-eVg" firstAttribute="top" secondItem="7WH-ew-3FU" secondAttribute="bottom" constant="2" id="yw7-i7-pWy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DII-sQ-49I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZz-13-hWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.9275362318845" y="-2.0089285714285712"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LrT-OR-5tD">
+            <objects>
+                <viewController id="RfS-o5-eVE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1UV-9I-hL1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEM: From Interest to Passion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGc-z2-40W">
+                                <rect key="frame" x="48" y="20" width="318" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rxK-ah-Ub0">
+                                <rect key="frame" x="16" y="48" width="382" height="698"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">I remember first hearing of Technovation Girls from a friend of mine, Paloma, who eventually dragged me into joining it with her. It was a program where teenage girls would come together, form groups, and compete in creating an app that would solve a real-life issue of their choosing. Going into the program, I had barely any knowledge of what the STEM field was and the actual issue that Technovation Girls wants to convey through this program; the lack of women in STEM. The first few briefings led me to realize that the STEM field has always been heavily male-dominated and still is today. It opened up this new world to me which I was unfamiliar with, but was curious enough to give it a try. 
+At first, the project seemed like a very daunting task that I wasn’t sure of being capable enough to get done. From my first fears of being grouped with girls from other schools that Paloma and I didn’t know to not even knowing how to code at all. However, that was only scratching the surface. The real obstacles only started to emerge later on. Deciding on our final issue was a challenge itself, where countless back-and-forths with fellow members and our assigned mentors had us constantly deliberating on what issue and what target audience we wanted to focus on. Eventually, we landed upon the issue of the youth’s (teenage to young adults) safety when using public transportation. Then, came the research and planning portion which was one of the heavier tasks we did from sending out surveys to people from different countries, scheduling and conducting an interview with the former VP of Research &amp; Insights at GOJEK Indonesia, planning out the flowchart and UX, and brainstorming the UI design for the app itself. 
+At that point, Paloma and I were at our breaking point because our two other members had been contributing close to nothing at that point and we had to confront them about it, and give them their last chance, which even resulted in one of the members leaving the group and entire project. Even with that, we knew we had to keep on going and continue our work which left us with the final part of the project, the coding process. One of my tasks was coding most of the final UI and UX which left me sleep-deprived for many nights and had me in multiple mental breakdowns, but in completing it I felt a sense of relief and pride for being able to accomplish this heavy task and I realized that I found enjoyment in being able to create that way. 
+Our hard work finally paid off on presentation day where we successfully presented our entire project with being the only group not having any questions asked and instead, only being commended for our awareness of the issue and how thought out our project was. That success was ultimately shown when our project was announced as the first-place winner. 
+However, to me the biggest win, was not the bragging rights or the fact that the project was over, but it was two things; being able to conquer such a challenging task and realizing that I want my future to be in STEM. I don’t think words can express the sweat and tears that I had during this entire project, but it was so physically, mentally, and emotionally challenging that being able to complete it with a first-place cherry on top makes me so proud of being able to succeed. Furthermore, Technovation Girls has become this door that has opened me to this world of STEM and I want to step foot into that world. It opened me up to something much more than I had expected, not only because I realized I enjoy it, but also because I want to represent the very few women in this field. Closing that gender gap in the STEM field is now something that I am passionate about and aim to do in the future whether or not it becomes affiliated with my career or stays as a passion close to my heart.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ecj-cZ-Nj7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rxK-ah-Ub0" firstAttribute="top" secondItem="oGc-z2-40W" secondAttribute="bottom" constant="2" id="3Lk-ji-Rxp"/>
+                            <constraint firstItem="ecj-cZ-Nj7" firstAttribute="trailing" secondItem="rxK-ah-Ub0" secondAttribute="trailing" constant="16" id="6Xi-0i-IJa"/>
+                            <constraint firstItem="oGc-z2-40W" firstAttribute="leading" secondItem="1UV-9I-hL1" secondAttribute="leading" constant="48" id="9wE-ne-IPk"/>
+                            <constraint firstItem="rxK-ah-Ub0" firstAttribute="bottom" secondItem="ecj-cZ-Nj7" secondAttribute="bottom" id="Odi-Zt-tsZ"/>
+                            <constraint firstItem="rxK-ah-Ub0" firstAttribute="leading" secondItem="ecj-cZ-Nj7" secondAttribute="leading" constant="16" id="Rzm-Ap-G1b"/>
+                            <constraint firstItem="oGc-z2-40W" firstAttribute="top" secondItem="1UV-9I-hL1" secondAttribute="top" constant="20" id="cZV-6Y-oTn"/>
+                            <constraint firstAttribute="trailing" secondItem="oGc-z2-40W" secondAttribute="trailing" constant="48" id="grU-ng-XF4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DZw-Df-z2J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i51-Pf-DtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.8695652173915" y="-680.35714285714278"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="aby" width="1080" height="1080"/>
+        <image name="jasmine" width="1080" height="1080"/>
         <image name="resource" width="30" height="30"/>
+        <image name="signinup" width="414" height="896"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
