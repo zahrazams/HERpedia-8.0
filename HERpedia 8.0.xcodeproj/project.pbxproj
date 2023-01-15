@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CD2DEE7A2971B4AC00E4A22E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DEE792971B4AC00E4A22E /* ProfileViewController.swift */; };
+		CD6563F32973DFA600E3EE3A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F22973DFA600E3EE3A /* TableViewCell.swift */; };
+		CD6563F52973DFD400E3EE3A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F42973DFD400E3EE3A /* TableViewController.swift */; };
+		CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F62973E05900E3EE3A /* TableViewDetail.swift */; };
+		CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F82973E0A800E3EE3A /* Opportunity.swift */; };
 		CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D3A296DC0A100EE4D6C /* AppDelegate.swift */; };
 		CDC01D3D296DC0A100EE4D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D3C296DC0A100EE4D6C /* SceneDelegate.swift */; };
 		CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC01D3E296DC0A100EE4D6C /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 
 /* Begin PBXFileReference section */
 		CD2DEE792971B4AC00E4A22E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CD6563F22973DFA600E3EE3A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CD6563F42973DFD400E3EE3A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CD6563F62973E05900E3EE3A /* TableViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDetail.swift; sourceTree = "<group>"; };
+		CD6563F82973E0A800E3EE3A /* Opportunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
 		CDC01D37296DC0A100EE4D6C /* HERpedia 8.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HERpedia 8.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC01D3A296DC0A100EE4D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC01D3C296DC0A100EE4D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				CDC01D6B296E4CB100EE4D6C /* Discover.storyboard */,
+				CD6563F22973DFA600E3EE3A /* TableViewCell.swift */,
+				CD6563F42973DFD400E3EE3A /* TableViewController.swift */,
+				CD6563F62973E05900E3EE3A /* TableViewDetail.swift */,
+				CD6563F82973E0A800E3EE3A /* Opportunity.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 			files = (
 				CDC01D62296E419500EE4D6C /* CreateAccountViewController.swift in Sources */,
 				CDC01D60296E418800EE4D6C /* LoginViewController.swift in Sources */,
+				CD6563F52973DFD400E3EE3A /* TableViewController.swift in Sources */,
 				CDC01D5B296DDDD900EE4D6C /* OnboardingSlide.swift in Sources */,
 				CDC01D59296DDD0D00EE4D6C /* UIView+Extension.swift in Sources */,
 				CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */,
@@ -279,7 +292,10 @@
 				CD2DEE7A2971B4AC00E4A22E /* ProfileViewController.swift in Sources */,
 				CDC01D45296DC0A100EE4D6C /* HERpedia_8_0.xcdatamodeld in Sources */,
 				CDC01D56296DD75D00EE4D6C /* OnboardingViewController.swift in Sources */,
+				CD6563F32973DFA600E3EE3A /* TableViewCell.swift in Sources */,
 				CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */,
+				CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */,
+				CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */,
 				CDC01D3D296DC0A100EE4D6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
