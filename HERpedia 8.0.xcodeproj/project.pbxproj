@@ -32,6 +32,7 @@
 		CDC01D73296E777B00EE4D6C /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC01D72296E777B00EE4D6C /* Message.storyboard */; };
 		CDC01D75296E778F00EE4D6C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC01D74296E778E00EE4D6C /* Profile.storyboard */; };
 		CDF049D3297487D700379B8A /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF049D2297487D700379B8A /* BlogViewController.swift */; };
+		CDF049D52974A95A00379B8A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF049D42974A95A00379B8A /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		CDC01D72296E777B00EE4D6C /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		CDC01D74296E778E00EE4D6C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		CDF049D2297487D700379B8A /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		CDF049D42974A95A00379B8A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC01D72296E777B00EE4D6C /* Message.storyboard */,
+				CDF049D42974A95A00379B8A /* MessageViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				CDC01D56296DD75D00EE4D6C /* OnboardingViewController.swift in Sources */,
 				CD6563F32973DFA600E3EE3A /* TableViewCell.swift in Sources */,
 				CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */,
+				CDF049D52974A95A00379B8A /* MessageViewController.swift in Sources */,
 				CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */,
 				CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */,
 				CDC01D3D296DC0A100EE4D6C /* SceneDelegate.swift in Sources */,
