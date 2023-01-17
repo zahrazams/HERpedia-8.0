@@ -448,7 +448,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="4J2-Gw-0Wh">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="DYi-de-lvO">
-                            <color key="tintColor" systemColor="tintColor"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="s2r-gI-gZ1" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="VXM-f7-jeI"/>
                             </connections>
@@ -646,9 +646,6 @@ However, to me the biggest win, was not the bragging rights or the fact that the
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
