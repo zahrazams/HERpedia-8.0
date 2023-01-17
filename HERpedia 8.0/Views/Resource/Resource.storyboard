@@ -314,7 +314,7 @@
                                         <rect key="frame" x="-2" y="0.0" width="386" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="maximumTrackTintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="184" translatesAutoresizingMaskIntoConstraints="NO" id="jWN-Jq-WUc">
                                         <rect key="frame" x="0.0" y="50" width="382" height="20.5"/>
@@ -360,7 +360,7 @@
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="puB-4Z-kvd">
                                 <rect key="frame" x="16" y="722" width="382" height="4"/>
-                                <color key="progressTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="progressTintColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dUx-DU-LzF"/>
