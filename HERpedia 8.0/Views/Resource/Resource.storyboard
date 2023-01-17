@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="57.971014492753625" y="-2.0089285714285712"/>
         </scene>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="goh-cV-xyT">
             <objects>
-                <viewController id="J7W-wf-TnE" sceneMemberID="viewController">
+                <viewController id="J7W-wf-TnE" customClass="IntroductionViewController" customModule="HERpedia_8_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MiY-us-Igs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +113,9 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="OJL-fA-WzS" kind="show" id="yFC-cD-U6Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which STEM field are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-bL-wNm">
                                 <rect key="frame" x="32" y="200" width="350" height="32.5"/>
@@ -121,6 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="a1r-vr-0Ug"/>
                         <color key="backgroundColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="WII-0R-9Qz" firstAttribute="top" secondItem="MiY-us-Igs" secondAttribute="top" id="0Z5-4M-ReS"/>
@@ -139,6 +143,326 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lls-Zt-xdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969.56521739130437" y="709.82142857142856"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="ftz-IO-dew">
+            <objects>
+                <viewController id="0P2-KW-bVx" customClass="QuestionViewController" customModule="HERpedia_8_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ma-UR-hY2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DgQ-4K-Tdk">
+                                <rect key="frame" x="16" y="268" width="382" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLT-k6-Bdl">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="37.5"/>
+                                        <color key="backgroundColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0P2-KW-bVx" eventType="touchUpInside" id="sA1-Yp-lNV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1y-oQ-dQy">
+                                        <rect key="frame" x="0.0" y="57.5" width="382" height="37.5"/>
+                                        <color key="backgroundColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0P2-KW-bVx" eventType="touchUpInside" id="EgP-tQ-Ax5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1w-5U-GAs">
+                                        <rect key="frame" x="0.0" y="115" width="382" height="37.5"/>
+                                        <color key="backgroundColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0P2-KW-bVx" eventType="touchUpInside" id="U0k-Ec-eTW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXp-BL-OBY">
+                                        <rect key="frame" x="0.0" y="172.5" width="382" height="37.5"/>
+                                        <color key="backgroundColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0P2-KW-bVx" eventType="touchUpInside" id="i4L-Tq-osQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g5G-R5-sLs">
+                                <rect key="frame" x="16" y="252.5" width="382" height="241.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="LPg-Y0-TWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-OW-YQ8">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="31"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBC-IS-o1x">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oBA-0m-nXo">
+                                        <rect key="frame" x="0.0" y="51" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQM-49-NuD">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="31"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gb-X3-gou">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ebf-pF-5HO">
+                                        <rect key="frame" x="0.0" y="102" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2D-Fm-hZk">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="31"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-Tt-LW4">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-Id-nrM">
+                                        <rect key="frame" x="0.0" y="153" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91a-kv-MDX">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="31"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Y3-au-p34">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-NR-hbC">
+                                        <rect key="frame" x="0.0" y="204" width="382" height="37.5"/>
+                                        <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit Answer">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="0P2-KW-bVx" eventType="touchUpInside" id="fxv-Tm-kON"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-2d-vja">
+                                <rect key="frame" x="16" y="309" width="382" height="128"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-gg-kyF">
+                                        <rect key="frame" x="-2" y="0.0" width="386" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.63921570780000003" green="0.15686275059999999" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="maximumTrackTintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="184" translatesAutoresizingMaskIntoConstraints="NO" id="jWN-Jq-WUc">
+                                        <rect key="frame" x="0.0" y="50" width="382" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-Zf-BPj">
+                                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zk-6Y-VZq">
+                                                <rect key="frame" x="345.5" y="0.0" width="36.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydv-rd-peF">
+                                        <rect key="frame" x="0.0" y="90.5" width="382" height="37.5"/>
+                                        <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit Answer">
+                                            <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="0P2-KW-bVx" eventType="touchUpInside" id="XYk-J2-bFP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjQ-MX-BEi">
+                                <rect key="frame" x="16" y="76" width="382" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="puB-4Z-kvd">
+                                <rect key="frame" x="16" y="722" width="382" height="4"/>
+                                <color key="progressTintColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dUx-DU-LzF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DgQ-4K-Tdk" firstAttribute="leading" secondItem="dUx-DU-LzF" secondAttribute="leading" constant="16" id="4D4-pp-RGA"/>
+                            <constraint firstItem="puB-4Z-kvd" firstAttribute="leading" secondItem="dUx-DU-LzF" secondAttribute="leading" constant="16" id="4nK-QJ-fkD"/>
+                            <constraint firstItem="g5G-R5-sLs" firstAttribute="centerY" secondItem="6ma-UR-hY2" secondAttribute="centerY" id="6Zt-FE-GlS"/>
+                            <constraint firstItem="dUx-DU-LzF" firstAttribute="trailing" secondItem="cjQ-MX-BEi" secondAttribute="trailing" constant="16" id="CA8-rA-0bB"/>
+                            <constraint firstItem="dUx-DU-LzF" firstAttribute="trailing" secondItem="DgQ-4K-Tdk" secondAttribute="trailing" constant="16" id="DcX-qZ-Z0e"/>
+                            <constraint firstItem="DgQ-4K-Tdk" firstAttribute="centerY" secondItem="6ma-UR-hY2" secondAttribute="centerY" id="RbZ-EQ-9g8"/>
+                            <constraint firstItem="cjQ-MX-BEi" firstAttribute="top" secondItem="dUx-DU-LzF" secondAttribute="top" constant="20" id="eCj-b0-GPd"/>
+                            <constraint firstItem="cjQ-MX-BEi" firstAttribute="leading" secondItem="dUx-DU-LzF" secondAttribute="leading" constant="16" id="es2-nf-m6b"/>
+                            <constraint firstItem="g5G-R5-sLs" firstAttribute="leading" secondItem="dUx-DU-LzF" secondAttribute="leading" constant="16" id="f52-os-tiS"/>
+                            <constraint firstItem="dUx-DU-LzF" firstAttribute="trailing" secondItem="g5G-R5-sLs" secondAttribute="trailing" constant="16" id="jbq-fj-yiK"/>
+                            <constraint firstItem="dUx-DU-LzF" firstAttribute="trailing" secondItem="puB-4Z-kvd" secondAttribute="trailing" constant="16" id="n6C-i8-we7"/>
+                            <constraint firstItem="PbM-2d-vja" firstAttribute="leading" secondItem="dUx-DU-LzF" secondAttribute="leading" constant="16" id="ny7-Cn-iOJ"/>
+                            <constraint firstItem="dUx-DU-LzF" firstAttribute="trailing" secondItem="PbM-2d-vja" secondAttribute="trailing" constant="16" id="rJO-rL-PgY"/>
+                            <constraint firstItem="dUx-DU-LzF" firstAttribute="bottom" secondItem="puB-4Z-kvd" secondAttribute="bottom" constant="20" id="uwp-v1-syE"/>
+                            <constraint firstItem="PbM-2d-vja" firstAttribute="centerY" secondItem="6ma-UR-hY2" secondAttribute="centerY" id="w48-Ay-STB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pmh-Dk-9uh"/>
+                    <connections>
+                        <outlet property="multiLabel1" destination="tEZ-OW-YQ8" id="5cB-me-L1d"/>
+                        <outlet property="multiLabel2" destination="UQM-49-NuD" id="NSi-6v-mNa"/>
+                        <outlet property="multiLabel3" destination="h2D-Fm-hZk" id="Ibh-1t-eFu"/>
+                        <outlet property="multiLabel4" destination="91a-kv-MDX" id="mu8-04-ZqP"/>
+                        <outlet property="multiSwitch1" destination="cBC-IS-o1x" id="apM-Hm-adW"/>
+                        <outlet property="multiSwitch2" destination="9gb-X3-gou" id="GQs-KE-M7J"/>
+                        <outlet property="multiSwitch3" destination="gCj-Tt-LW4" id="U4q-pa-8d9"/>
+                        <outlet property="multiSwitch4" destination="6Y3-au-p34" id="TLz-ax-DE0"/>
+                        <outlet property="multipleStackView" destination="g5G-R5-sLs" id="znN-am-rsd"/>
+                        <outlet property="questionLabel" destination="cjQ-MX-BEi" id="fnc-QA-MfB"/>
+                        <outlet property="questionProgressView" destination="puB-4Z-kvd" id="eGw-WN-1OU"/>
+                        <outlet property="rangedLabel1" destination="i9a-Zf-BPj" id="vWS-3g-Hvc"/>
+                        <outlet property="rangedLabel2" destination="0Zk-6Y-VZq" id="4t5-JO-1A0"/>
+                        <outlet property="rangedSlider" destination="zeA-gg-kyF" id="VmV-fd-5bq"/>
+                        <outlet property="rangedStackView" destination="PbM-2d-vja" id="lSi-CD-7Ga"/>
+                        <outlet property="singleButton1" destination="rLT-k6-Bdl" id="Y31-9y-3zT"/>
+                        <outlet property="singleButton2" destination="Y1y-oQ-dQy" id="r5T-23-ghf"/>
+                        <outlet property="singleButton3" destination="V1w-5U-GAs" id="CW1-0E-3aa"/>
+                        <outlet property="singleButton4" destination="pXp-BL-OBY" id="gdi-34-NSD"/>
+                        <outlet property="singleStackView" destination="DgQ-4K-Tdk" id="dB1-sD-5qO"/>
+                        <segue destination="qiR-n0-yoG" kind="show" identifier="ResultsSegue" id="Td0-0Y-nxi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyA-id-N22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768.1159420289855" y="709.82142857142856"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="cBp-Dk-A7D">
+            <objects>
+                <viewController id="qiR-n0-yoG" customClass="ResultsViewController" customModule="HERpedia_8_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jLa-0L-o8o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m4r-f6-oAW">
+                                <rect key="frame" x="16" y="325" width="382" height="96.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLK-uD-sWH">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="65"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRP-dE-8jr">
+                                        <rect key="frame" x="0.0" y="73" width="382" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RNg-Rf-hgQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RNg-Rf-hgQ" firstAttribute="trailing" secondItem="m4r-f6-oAW" secondAttribute="trailing" constant="16" id="LAk-60-ZaN"/>
+                            <constraint firstItem="m4r-f6-oAW" firstAttribute="leading" secondItem="RNg-Rf-hgQ" secondAttribute="leading" constant="16" id="rlF-yZ-Bnv"/>
+                            <constraint firstItem="m4r-f6-oAW" firstAttribute="centerY" secondItem="jLa-0L-o8o" secondAttribute="centerY" id="xUK-Nv-44f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Results" id="4J2-Gw-0Wh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="DYi-de-lvO">
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <connections>
+                                <segue destination="s2r-gI-gZ1" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="VXM-f7-jeI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="FLK-uD-sWH" id="B63-BA-fZZ"/>
+                        <outlet property="resultDefinitionLabel" destination="gRP-dE-8jr" id="tPC-MW-72Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKJ-UB-COH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="s2r-gI-gZ1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3652.1739130434785" y="709.82142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YWh-6w-pI3">
@@ -182,6 +506,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XZA-Va-gvV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aQ4-PS-V3y" firstAttribute="top" secondItem="hz8-g3-jLI" secondAttribute="top" constant="12" id="8Kz-02-JRW"/>
@@ -218,10 +543,10 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Spd-fn-eVg">
                                 <rect key="frame" x="20" y="48" width="378" height="698"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Being the 14th largest country, Indonesia is not only inhabited by a large population of humans but also by a high number of animal and plant life. Referred to as fauna and flora, these two elements are essential to the existence of an environment. They serve the purpose of maintaining ecological balance, expanding local economies, and contributing to the visual value of a certain place. This applies to Indonesia, as it is a country known for its diverse species of animals and beautiful natural landmarks. However, as time goes by, factors that harm Indonesia’s fauna and flora start to emerge at an alarmingly fast pace, posing an issue that threatens the environment of the country. One of these factors includes deforestation, which is harming Indonesia’s fauna and flora as it led to the deaths of many animals and destroyed plantations as well. 
+                                <string key="text">Being the 14th largest country, Indonesia is not only inhabited by a large population of humans but also by a high number of animal and plant life. Referred to as fauna and flora, these two elements are essential to the existence of an environment. They serve the purpose of maintaining ecological balance, expanding local economies, and contributing to the visual value of a certain place. This applies to Indonesia, as it is a country known for its diverse species of animals and beautiful natural landmarks. However, as time goes by, factors that harm Indonesia’s fauna and flora start to emerge at an alarmingly fast pace, posing an issue that threatens the environment of the country. One of these factors includes deforestation, which is harming Indonesia’s fauna and flora as it led to the deaths of many animals and destroyed plantations as well. 
 When it comes to fauna, a victim of this is the orangutan, which continues to suffer precipitous declines from deforestation as far as decreasing by 75%. The Sumatran orangutan is classified as “Critically Endangered” by the IUCN whereas the Borneo orangutan is classified as “Threatened”. The United Nations has declared the current situation of the remaining orangutans a "conservation emergency." One of the primary reasons for orangutan extinction is habitat destruction caused by massive deforestation. The Sumatran tiger, the only surviving species of Indonesian tiger, is also a victim of this damage. One of the most immediate threats to their survival is the destruction of critical habitats caused by deforestation. Decreasing by 16.6%, there are an estimated 400 to 600 Sumatran tigers left in the wild. These destructions of habitat leads to the destruction of the natural flora left in Indonesia that they are known for. As of 2020, Indonesia lost 115,459 hectares (285,300 acres) of forest cover. To worsen things for Indonesia's
 environment, forests make up 52.1% of Indonesia, so this loss takes up the majority of their flora. 
-Other than Fauna &amp; Flora International (FFI) working with Indonesia’s Ministry of Forestry, as citizens, we could also take part in this too. Taking part does not necessarily imply doing huge things or spending a lot of money. To conserve Indonesia’s fauna and flora from further damage, we could start with small things like reducing the usage of wildlife-related products and not supporting companies that perform deforestation for their land. In addition, with the usage of social media, we can spread awareness regarding this issue. Through these actions, hopefully, the future of Indonesia’s fauna and flora can be saved and significantly improved.</mutableString>
+Other than Fauna &amp; Flora International (FFI) working with Indonesia’s Ministry of Forestry, as citizens, we could also take part in this too. Taking part does not necessarily imply doing huge things or spending a lot of money. To conserve Indonesia’s fauna and flora from further damage, we could start with small things like reducing the usage of wildlife-related products and not supporting companies that perform deforestation for their land. In addition, with the usage of social media, we can spread awareness regarding this issue. Through these actions, hopefully, the future of Indonesia’s fauna and flora can be saved and significantly improved.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -262,12 +587,12 @@ Other than Fauna &amp; Flora International (FFI) working with Indonesia’s Mini
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rxK-ah-Ub0">
                                 <rect key="frame" x="16" y="48" width="382" height="698"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">I remember first hearing of Technovation Girls from a friend of mine, Paloma, who eventually dragged me into joining it with her. It was a program where teenage girls would come together, form groups, and compete in creating an app that would solve a real-life issue of their choosing. Going into the program, I had barely any knowledge of what the STEM field was and the actual issue that Technovation Girls wants to convey through this program; the lack of women in STEM. The first few briefings led me to realize that the STEM field has always been heavily male-dominated and still is today. It opened up this new world to me which I was unfamiliar with, but was curious enough to give it a try. 
+                                <string key="text">I remember first hearing of Technovation Girls from a friend of mine, Paloma, who eventually dragged me into joining it with her. It was a program where teenage girls would come together, form groups, and compete in creating an app that would solve a real-life issue of their choosing. Going into the program, I had barely any knowledge of what the STEM field was and the actual issue that Technovation Girls wants to convey through this program; the lack of women in STEM. The first few briefings led me to realize that the STEM field has always been heavily male-dominated and still is today. It opened up this new world to me which I was unfamiliar with, but was curious enough to give it a try. 
 At first, the project seemed like a very daunting task that I wasn’t sure of being capable enough to get done. From my first fears of being grouped with girls from other schools that Paloma and I didn’t know to not even knowing how to code at all. However, that was only scratching the surface. The real obstacles only started to emerge later on. Deciding on our final issue was a challenge itself, where countless back-and-forths with fellow members and our assigned mentors had us constantly deliberating on what issue and what target audience we wanted to focus on. Eventually, we landed upon the issue of the youth’s (teenage to young adults) safety when using public transportation. Then, came the research and planning portion which was one of the heavier tasks we did from sending out surveys to people from different countries, scheduling and conducting an interview with the former VP of Research &amp; Insights at GOJEK Indonesia, planning out the flowchart and UX, and brainstorming the UI design for the app itself. 
 At that point, Paloma and I were at our breaking point because our two other members had been contributing close to nothing at that point and we had to confront them about it, and give them their last chance, which even resulted in one of the members leaving the group and entire project. Even with that, we knew we had to keep on going and continue our work which left us with the final part of the project, the coding process. One of my tasks was coding most of the final UI and UX which left me sleep-deprived for many nights and had me in multiple mental breakdowns, but in completing it I felt a sense of relief and pride for being able to accomplish this heavy task and I realized that I found enjoyment in being able to create that way. 
 Our hard work finally paid off on presentation day where we successfully presented our entire project with being the only group not having any questions asked and instead, only being commended for our awareness of the issue and how thought out our project was. That success was ultimately shown when our project was announced as the first-place winner. 
 However, to me the biggest win, was not the bragging rights or the fact that the project was over, but it was two things; being able to conquer such a challenging task and realizing that I want my future to be in STEM. I don’t think words can express the sweat and tears that I had during this entire project, but it was so physically, mentally, and emotionally challenging that being able to complete it with a first-place cherry on top makes me so proud of being able to succeed. Furthermore, Technovation Girls has become this door that has opened me to this world of STEM and I want to step foot into that world. It opened me up to something much more than I had expected, not only because I realized I enjoy it, but also because I want to represent the very few women in this field. Closing that gender gap in the STEM field is now something that I am passionate about and aim to do in the future whether or not it becomes affiliated with my career or stays as a passion close to my heart.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -291,6 +616,25 @@ However, to me the biggest win, was not the bragging rights or the fact that the
             </objects>
             <point key="canvasLocation" x="1860.8695652173915" y="-680.35714285714278"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lKP-gn-hdV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OJL-fA-WzS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="AfN-2F-wRD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="idU-cw-KJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0P2-KW-bVx" kind="relationship" relationship="rootViewController" id="kSy-Jz-BIK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dm1-yf-ZIP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.8695652173915" y="709.82142857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="aby" width="1080" height="1080"/>
@@ -302,6 +646,9 @@ However, to me the biggest win, was not the bragging rights or the fact that the
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
