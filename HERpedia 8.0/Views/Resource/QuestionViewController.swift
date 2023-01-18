@@ -37,29 +37,29 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionProgressView: UIProgressView!
     
     var questions: [Question] = [
-        Question(text: "Which food do you like most?",
+        Question(text: "Which person are you in a group project?",
                  type: .single,
                  answers: [
-                    Answer(text: "Steak", type: .science),
-                    Answer(text: "Fish", type: .technology),
-                    Answer(text: "Carrots", type: .engineering),
-                    Answer(text: "Corn", type: .mathematics)
+                    Answer(text: "Researcher", type: .science),
+                    Answer(text: "Leader", type: .technology),
+                    Answer(text: "Innovator", type: .engineering),
+                    Answer(text: "Analyst", type: .mathematics)
             ]),
         Question(text: "Which activities do you enjoy?",
                  type: .multiple,
                  answers: [
-                    Answer(text: "Swimming", type: .science),
-                    Answer(text: "Sleeping", type: .technology),
-                    Answer(text: "Cuddling", type: .engineering),
-                    Answer(text: "Eating", type: .mathematics)
+                    Answer(text: "Solving a puzzle", type: .mathematics),
+                    Answer(text: "Building legos", type: .engineering),
+                    Answer(text: "Playing video games", type: .technology),
+                    Answer(text: "Cooking new recipes", type: .science)
             ]),
-        Question(text: "How much do you enjoy car rides?",
+        Question(text: "How often do you shower?",
                  type: .ranged,
                  answers: [
-                    Answer(text: "I dislike them", type: .science),
-                    Answer(text: "I get a little nervous", type: .technology),
-                    Answer(text: "I barely notice them", type: .engineering),
-                    Answer(text: "I love them", type: .mathematics)
+                    Answer(text: "Rarely", type: .technology),
+                    Answer(text: "Sometimes", type: .mathematics),
+                    Answer(text: "Often", type: .engineering),
+                    Answer(text: "Always", type: .science)
             ]),
     ]
     

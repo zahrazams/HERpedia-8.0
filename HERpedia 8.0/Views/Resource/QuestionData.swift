@@ -28,13 +28,13 @@ enum StemType: Character {
     var definition: String {
         switch self {
         case .science:
-            return "You're curious about how and why things happen in the world. Despite temptation, your patience and persistence prevent you from jumping to conclusions."
+            return "You got science! You're curious about how and why things happen in the world. Despite temptation, your patience and persistence prevent you from jumping to conclusions."
         case .technology:
-            return "You have outstanding communication, interpersonal, and leadership skills! Coupled with your decisive decision-making, you are an unstoppable force of tech savvy."
+            return "You got technology! You have outstanding communication, interpersonal, and leadership skills! Coupled with your decisive decision-making, you are an unstoppable force of tech savvy."
         case .engineering:
-            return "Critical and full of creativity, you think outside the box. You are capable of imagining solutions that no one else can, then analyzing them and making crucial decisions."
+            return "You got engineering! Critical and full of creativity, you think outside the box. You are capable of imagining solutions that no one else can, then analyzing them and making crucial decisions."
         case .mathematics:
-            return "Your excellent capacity for analysis and finding solutions to problems makes mathematics an excellent field of study for you to pursue."
+            return "You got mathematics! Your excellent capacity for analysis and finding solutions to problems makes mathematics an excellent field of study for you to pursue."
         }
     }
 }

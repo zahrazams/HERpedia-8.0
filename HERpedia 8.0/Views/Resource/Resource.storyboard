@@ -420,8 +420,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m4r-f6-oAW">
-                                <rect key="frame" x="16" y="325" width="382" height="96.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signinup" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-yB-kwa">
+                                <rect key="frame" x="0.0" y="56" width="414" height="690"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="m4r-f6-oAW">
+                                <rect key="frame" x="16" y="150" width="382" height="103.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLK-uD-sWH">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="65"/>
@@ -430,7 +433,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRP-dE-8jr">
-                                        <rect key="frame" x="0.0" y="73" width="382" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="80" width="382" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -441,9 +444,13 @@
                         <viewLayoutGuide key="safeArea" id="RNg-Rf-hgQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2gc-yB-kwa" firstAttribute="leading" secondItem="RNg-Rf-hgQ" secondAttribute="leading" id="3pA-4E-Fca"/>
+                            <constraint firstItem="2gc-yB-kwa" firstAttribute="bottom" secondItem="RNg-Rf-hgQ" secondAttribute="bottom" id="BXM-dR-rwT"/>
+                            <constraint firstItem="m4r-f6-oAW" firstAttribute="top" secondItem="RNg-Rf-hgQ" secondAttribute="top" constant="94" id="GBz-wb-Gf9"/>
                             <constraint firstItem="RNg-Rf-hgQ" firstAttribute="trailing" secondItem="m4r-f6-oAW" secondAttribute="trailing" constant="16" id="LAk-60-ZaN"/>
+                            <constraint firstItem="2gc-yB-kwa" firstAttribute="top" secondItem="RNg-Rf-hgQ" secondAttribute="top" id="UJ8-rJ-2bE"/>
+                            <constraint firstItem="2gc-yB-kwa" firstAttribute="trailing" secondItem="RNg-Rf-hgQ" secondAttribute="trailing" id="rUx-Qw-Mxk"/>
                             <constraint firstItem="m4r-f6-oAW" firstAttribute="leading" secondItem="RNg-Rf-hgQ" secondAttribute="leading" constant="16" id="rlF-yZ-Bnv"/>
-                            <constraint firstItem="m4r-f6-oAW" firstAttribute="centerY" secondItem="jLa-0L-o8o" secondAttribute="centerY" id="xUK-Nv-44f"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="4J2-Gw-0Wh">
