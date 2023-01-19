@@ -12,6 +12,7 @@
 		CD6563F52973DFD400E3EE3A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F42973DFD400E3EE3A /* TableViewController.swift */; };
 		CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F62973E05900E3EE3A /* TableViewDetail.swift */; };
 		CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F82973E0A800E3EE3A /* Opportunity.swift */; };
+		CD727064297962AB0013DB3B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD727063297962AB0013DB3B /* CardView.swift */; };
 		CD7A1F3F2976CCBE0021855B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A1F3E2976CCBE0021855B /* QuestionViewController.swift */; };
 		CD7A1F412976CCD40021855B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A1F402976CCD40021855B /* ResultsViewController.swift */; };
 		CD7A1F432976CCFA0021855B /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A1F422976CCFA0021855B /* IntroductionViewController.swift */; };
@@ -36,7 +37,6 @@
 		CDC01D73296E777B00EE4D6C /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC01D72296E777B00EE4D6C /* Message.storyboard */; };
 		CDC01D75296E778F00EE4D6C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC01D74296E778E00EE4D6C /* Profile.storyboard */; };
 		CDF049D3297487D700379B8A /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF049D2297487D700379B8A /* BlogViewController.swift */; };
-		CDF049D52974A95A00379B8A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF049D42974A95A00379B8A /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +45,7 @@
 		CD6563F42973DFD400E3EE3A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD6563F62973E05900E3EE3A /* TableViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDetail.swift; sourceTree = "<group>"; };
 		CD6563F82973E0A800E3EE3A /* Opportunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
+		CD727063297962AB0013DB3B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CD7A1F3E2976CCBE0021855B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		CD7A1F402976CCD40021855B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		CD7A1F422976CCFA0021855B /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		CDC01D72296E777B00EE4D6C /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		CDC01D74296E778E00EE4D6C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		CDF049D2297487D700379B8A /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
-		CDF049D42974A95A00379B8A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC01D57296DDCE100EE4D6C /* Extensions */,
-				CDC01D53296DD72400EE4D6C /* CustomViews */,
+				CDC01D53296DD72400EE4D6C /* Custom */,
 				CDC01D52296DD71900EE4D6C /* Views */,
 				CDC01D51296DD71200EE4D6C /* Models */,
 				CDC01D3A296DC0A100EE4D6C /* AppDelegate.swift */,
@@ -142,11 +142,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CDC01D53296DD72400EE4D6C /* CustomViews */ = {
+		CDC01D53296DD72400EE4D6C /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				CD727063297962AB0013DB3B /* CardView.swift */,
 			);
-			path = CustomViews;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		CDC01D54296DD73700EE4D6C /* Onboarding */ = {
@@ -204,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				CDC01D72296E777B00EE4D6C /* Message.storyboard */,
-				CDF049D42974A95A00379B8A /* MessageViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -307,6 +307,7 @@
 				CD6563F52973DFD400E3EE3A /* TableViewController.swift in Sources */,
 				CDC01D5B296DDDD900EE4D6C /* OnboardingSlide.swift in Sources */,
 				CDC01D59296DDD0D00EE4D6C /* UIView+Extension.swift in Sources */,
+				CD727064297962AB0013DB3B /* CardView.swift in Sources */,
 				CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */,
 				CDF049D3297487D700379B8A /* BlogViewController.swift in Sources */,
 				CDC01D5D296DE20700EE4D6C /* OnboardingCollectionViewCell.swift in Sources */,
@@ -316,7 +317,6 @@
 				CDC01D56296DD75D00EE4D6C /* OnboardingViewController.swift in Sources */,
 				CD6563F32973DFA600E3EE3A /* TableViewCell.swift in Sources */,
 				CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */,
-				CDF049D52974A95A00379B8A /* MessageViewController.swift in Sources */,
 				CD7A1F432976CCFA0021855B /* IntroductionViewController.swift in Sources */,
 				CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */,
 				CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */,
