@@ -108,13 +108,13 @@
                                 <rect key="frame" x="20" y="112" width="374" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Career Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zq-fc-bOA">
-                                        <rect key="frame" x="20" y="20" width="334" height="52"/>
+                                        <rect key="frame" x="10" y="10" width="354" height="52"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                         <color key="textColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-RA-Uer">
-                                        <rect key="frame" x="20" y="106" width="334" height="24"/>
+                                        <rect key="frame" x="10" y="106" width="344" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -140,11 +140,11 @@
                                 <constraints>
                                     <constraint firstItem="NwY-Pg-2AJ" firstAttribute="centerY" secondItem="OlP-gf-Nsw" secondAttribute="centerY" id="8rc-n1-2db"/>
                                     <constraint firstAttribute="trailing" secondItem="NwY-Pg-2AJ" secondAttribute="trailing" constant="10" id="Big-V1-boW"/>
-                                    <constraint firstItem="3zq-fc-bOA" firstAttribute="leading" secondItem="OlP-gf-Nsw" secondAttribute="leading" constant="20" id="DeE-cu-Sfz"/>
+                                    <constraint firstItem="3zq-fc-bOA" firstAttribute="leading" secondItem="OlP-gf-Nsw" secondAttribute="leading" constant="10" id="DeE-cu-Sfz"/>
                                     <constraint firstAttribute="height" constant="150" id="Dyw-SN-9sV"/>
-                                    <constraint firstItem="Ecp-RA-Uer" firstAttribute="leading" secondItem="OlP-gf-Nsw" secondAttribute="leading" constant="20" id="GsL-3o-f52"/>
-                                    <constraint firstItem="3zq-fc-bOA" firstAttribute="top" secondItem="OlP-gf-Nsw" secondAttribute="top" constant="20" id="J20-6w-Mrn"/>
-                                    <constraint firstAttribute="trailing" secondItem="3zq-fc-bOA" secondAttribute="trailing" constant="20" id="OEW-l6-Cmx"/>
+                                    <constraint firstItem="Ecp-RA-Uer" firstAttribute="leading" secondItem="OlP-gf-Nsw" secondAttribute="leading" constant="10" id="GsL-3o-f52"/>
+                                    <constraint firstItem="3zq-fc-bOA" firstAttribute="top" secondItem="OlP-gf-Nsw" secondAttribute="top" constant="10" id="J20-6w-Mrn"/>
+                                    <constraint firstAttribute="trailing" secondItem="3zq-fc-bOA" secondAttribute="trailing" constant="10" id="OEW-l6-Cmx"/>
                                     <constraint firstAttribute="trailing" secondItem="Ecp-RA-Uer" secondAttribute="trailing" constant="20" id="fgp-d5-Zfy"/>
                                     <constraint firstAttribute="bottom" secondItem="Ecp-RA-Uer" secondAttribute="bottom" constant="20" id="yCb-gy-UU2"/>
                                 </constraints>
@@ -158,13 +158,13 @@
                                 <rect key="frame" x="20" y="282" width="374" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEM for Good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-wb-Wm9">
-                                        <rect key="frame" x="20" y="20" width="334" height="52"/>
+                                        <rect key="frame" x="10" y="10" width="354" height="52"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4I-hk-6a6">
-                                        <rect key="frame" x="20" y="106" width="334" height="24"/>
+                                        <rect key="frame" x="10" y="106" width="344" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -189,14 +189,14 @@
                                 <color key="backgroundColor" red="0.91764706370000004" green="0.83137255909999996" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="A4I-hk-6a6" secondAttribute="trailing" constant="20" id="1BX-WO-IOy"/>
-                                    <constraint firstItem="A4I-hk-6a6" firstAttribute="leading" secondItem="pei-Ee-Yzz" secondAttribute="leading" constant="20" id="CaC-55-ed6"/>
+                                    <constraint firstItem="A4I-hk-6a6" firstAttribute="leading" secondItem="pei-Ee-Yzz" secondAttribute="leading" constant="10" id="CaC-55-ed6"/>
                                     <constraint firstAttribute="height" constant="150" id="D24-tC-uff"/>
-                                    <constraint firstItem="ua5-wb-Wm9" firstAttribute="top" secondItem="pei-Ee-Yzz" secondAttribute="top" constant="20" id="WTg-b2-kFy"/>
+                                    <constraint firstItem="ua5-wb-Wm9" firstAttribute="top" secondItem="pei-Ee-Yzz" secondAttribute="top" constant="10" id="WTg-b2-kFy"/>
                                     <constraint firstAttribute="trailing" secondItem="Z94-cE-gFG" secondAttribute="trailing" constant="10" id="dI0-7a-hPl"/>
-                                    <constraint firstItem="ua5-wb-Wm9" firstAttribute="leading" secondItem="pei-Ee-Yzz" secondAttribute="leading" constant="20" id="fnk-jy-DoO"/>
+                                    <constraint firstItem="ua5-wb-Wm9" firstAttribute="leading" secondItem="pei-Ee-Yzz" secondAttribute="leading" constant="10" id="fnk-jy-DoO"/>
                                     <constraint firstAttribute="bottom" secondItem="A4I-hk-6a6" secondAttribute="bottom" constant="20" id="jcB-oZ-76s"/>
                                     <constraint firstItem="Z94-cE-gFG" firstAttribute="centerY" secondItem="pei-Ee-Yzz" secondAttribute="centerY" id="qQ5-QL-Mn0"/>
-                                    <constraint firstAttribute="trailing" secondItem="ua5-wb-Wm9" secondAttribute="trailing" constant="20" id="sNS-yR-GBT"/>
+                                    <constraint firstAttribute="trailing" secondItem="ua5-wb-Wm9" secondAttribute="trailing" constant="10" id="sNS-yR-GBT"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornnerRadius">
@@ -208,13 +208,13 @@
                                 <rect key="frame" x="20" y="452" width="374" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3C-er-bjf">
-                                        <rect key="frame" x="20" y="20" width="334" height="52"/>
+                                        <rect key="frame" x="10" y="10" width="354" height="52"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                         <color key="textColor" red="0.78823530669999997" green="0.50196081400000003" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGJ-3b-CbZ">
-                                        <rect key="frame" x="20" y="106.5" width="334" height="23.5"/>
+                                        <rect key="frame" x="10" y="106.5" width="344" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.78823530669999997" green="0.50196081400000003" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -238,12 +238,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.33725491169999999" green="0.074509806930000005" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="q3C-er-bjf" secondAttribute="trailing" constant="20" id="5AS-4V-ejJ"/>
-                                    <constraint firstItem="vGJ-3b-CbZ" firstAttribute="leading" secondItem="LLH-N9-FZ6" secondAttribute="leading" constant="20" id="Jb6-jg-4dM"/>
+                                    <constraint firstAttribute="trailing" secondItem="q3C-er-bjf" secondAttribute="trailing" constant="10" id="5AS-4V-ejJ"/>
+                                    <constraint firstItem="vGJ-3b-CbZ" firstAttribute="leading" secondItem="LLH-N9-FZ6" secondAttribute="leading" constant="10" id="Jb6-jg-4dM"/>
                                     <constraint firstItem="WFO-Qv-zn8" firstAttribute="centerY" secondItem="LLH-N9-FZ6" secondAttribute="centerY" id="L2K-oH-yib"/>
                                     <constraint firstAttribute="bottom" secondItem="vGJ-3b-CbZ" secondAttribute="bottom" constant="20" id="R2r-uc-dmB"/>
-                                    <constraint firstItem="q3C-er-bjf" firstAttribute="leading" secondItem="LLH-N9-FZ6" secondAttribute="leading" constant="20" id="UVl-Ex-qOJ"/>
-                                    <constraint firstItem="q3C-er-bjf" firstAttribute="top" secondItem="LLH-N9-FZ6" secondAttribute="top" constant="20" id="jan-nc-klI"/>
+                                    <constraint firstItem="q3C-er-bjf" firstAttribute="leading" secondItem="LLH-N9-FZ6" secondAttribute="leading" constant="10" id="UVl-Ex-qOJ"/>
+                                    <constraint firstItem="q3C-er-bjf" firstAttribute="top" secondItem="LLH-N9-FZ6" secondAttribute="top" constant="10" id="jan-nc-klI"/>
                                     <constraint firstAttribute="height" constant="150" id="jvb-Du-Ea0"/>
                                     <constraint firstAttribute="trailing" secondItem="vGJ-3b-CbZ" secondAttribute="trailing" constant="20" id="yNS-KU-XrX"/>
                                     <constraint firstAttribute="trailing" secondItem="WFO-Qv-zn8" secondAttribute="trailing" constant="10" id="z04-9T-797"/>
