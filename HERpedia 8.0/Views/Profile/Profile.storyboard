@@ -54,7 +54,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-FX-cCZ">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-FX-cCZ" customClass="CardView" customModule="HERpedia_8_0" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="321.5" width="374" height="375"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSF-Rx-Lq1">
@@ -107,12 +107,12 @@
                                                     <constraint firstAttribute="trailing" secondItem="SUh-BQ-ynO" secondAttribute="trailing" constant="15" id="teT-on-AiZ"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornnerRadius">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-nt-QW2">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-nt-QW2" customClass="CardView" customModule="HERpedia_8_0" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="716.5" width="374" height="375"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC2-as-CzX">
@@ -202,12 +202,12 @@
                                                     <constraint firstAttribute="trailing" secondItem="BEa-CJ-lLC" secondAttribute="trailing" constant="112" id="d2b-u1-oLT"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornnerRadius">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-yP-Bkq">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-yP-Bkq" customClass="CardView" customModule="HERpedia_8_0" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="1111.5" width="374" height="375"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC0-xF-fBw">
@@ -302,12 +302,12 @@
                                                     <constraint firstItem="TC0-xF-fBw" firstAttribute="leading" secondItem="DsW-yP-Bkq" secondAttribute="leading" constant="15" id="uq8-Ve-5ip"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornnerRadius">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en8-EB-T5r">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en8-EB-T5r" customClass="CardView" customModule="HERpedia_8_0" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="1506.5" width="374" height="375"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accomplishments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhD-49-rxy">
@@ -397,7 +397,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="dP6-yz-AOZ" secondAttribute="bottom" constant="15" id="umo-du-BLe"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornnerRadius">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
