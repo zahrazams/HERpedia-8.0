@@ -44,7 +44,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="93e-CC-7Qs"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                                <buttonConfiguration key="configuration" style="plain" title="Settings">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
@@ -106,6 +106,11 @@
                                                     <constraint firstItem="sSF-Rx-Lq1" firstAttribute="leading" secondItem="fIn-FX-cCZ" secondAttribute="leading" constant="15" id="sNr-nh-BUb"/>
                                                     <constraint firstAttribute="trailing" secondItem="SUh-BQ-ynO" secondAttribute="trailing" constant="15" id="teT-on-AiZ"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-nt-QW2">
                                                 <rect key="frame" x="20" y="716.5" width="374" height="375"/>
@@ -196,6 +201,11 @@
                                                     <constraint firstItem="LvL-G2-T2Z" firstAttribute="leading" secondItem="yCH-nt-QW2" secondAttribute="leading" constant="15" id="XXg-DP-3Bq"/>
                                                     <constraint firstAttribute="trailing" secondItem="BEa-CJ-lLC" secondAttribute="trailing" constant="112" id="d2b-u1-oLT"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-yP-Bkq">
                                                 <rect key="frame" x="20" y="1111.5" width="374" height="375"/>
@@ -291,6 +301,11 @@
                                                     <constraint firstItem="yg7-Y1-RVn" firstAttribute="leading" secondItem="DsW-yP-Bkq" secondAttribute="leading" constant="15" id="sB3-qL-4Q6"/>
                                                     <constraint firstItem="TC0-xF-fBw" firstAttribute="leading" secondItem="DsW-yP-Bkq" secondAttribute="leading" constant="15" id="uq8-Ve-5ip"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en8-EB-T5r">
                                                 <rect key="frame" x="20" y="1506.5" width="374" height="375"/>
@@ -381,6 +396,11 @@
                                                     <constraint firstItem="dP6-yz-AOZ" firstAttribute="top" secondItem="NNL-NW-ots" secondAttribute="bottom" constant="15" id="s5F-Ea-Ior"/>
                                                     <constraint firstAttribute="bottom" secondItem="dP6-yz-AOZ" secondAttribute="bottom" constant="15" id="umo-du-BLe"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -426,10 +446,10 @@
                         <constraints>
                             <constraint firstItem="jMY-N8-08o" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="087-gH-0O1"/>
                             <constraint firstItem="jMY-N8-08o" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="4bI-Vr-LmZ"/>
+                            <constraint firstItem="JTx-Nv-9km" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="2.23214" id="5TU-AF-UEr"/>
                             <constraint firstItem="jMY-N8-08o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MCe-0a-89H"/>
                             <constraint firstItem="JTx-Nv-9km" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="MG7-qO-3f2"/>
                             <constraint firstItem="jMY-N8-08o" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="fFJ-Yk-Ywe"/>
-                            <constraint firstItem="JTx-Nv-9km" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="2.23214" id="y9r-fT-6kF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hku-1Y-lYH"/>
