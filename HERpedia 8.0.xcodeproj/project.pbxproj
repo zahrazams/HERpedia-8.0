@@ -13,6 +13,9 @@
 		CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F62973E05900E3EE3A /* TableViewDetail.swift */; };
 		CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6563F82973E0A800E3EE3A /* Opportunity.swift */; };
 		CD727064297962AB0013DB3B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD727063297962AB0013DB3B /* CardView.swift */; };
+		CD7270662979922C0013DB3B /* StemForGoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7270652979922C0013DB3B /* StemForGoodViewController.swift */; };
+		CD72706829799B0D0013DB3B /* TechTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72706729799B0D0013DB3B /* TechTipsViewController.swift */; };
+		CD72706A29799C370013DB3B /* CareerChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72706929799C370013DB3B /* CareerChatViewController.swift */; };
 		CD7A1F3F2976CCBE0021855B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A1F3E2976CCBE0021855B /* QuestionViewController.swift */; };
 		CD7A1F412976CCD40021855B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A1F402976CCD40021855B /* ResultsViewController.swift */; };
 		CD7A1F432976CCFA0021855B /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A1F422976CCFA0021855B /* IntroductionViewController.swift */; };
@@ -46,6 +49,9 @@
 		CD6563F62973E05900E3EE3A /* TableViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDetail.swift; sourceTree = "<group>"; };
 		CD6563F82973E0A800E3EE3A /* Opportunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
 		CD727063297962AB0013DB3B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CD7270652979922C0013DB3B /* StemForGoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemForGoodViewController.swift; sourceTree = "<group>"; };
+		CD72706729799B0D0013DB3B /* TechTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechTipsViewController.swift; sourceTree = "<group>"; };
+		CD72706929799C370013DB3B /* CareerChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerChatViewController.swift; sourceTree = "<group>"; };
 		CD7A1F3E2976CCBE0021855B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		CD7A1F402976CCD40021855B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		CD7A1F422976CCFA0021855B /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				CDC01D72296E777B00EE4D6C /* Message.storyboard */,
+				CD7270652979922C0013DB3B /* StemForGoodViewController.swift */,
+				CD72706729799B0D0013DB3B /* TechTipsViewController.swift */,
+				CD72706929799C370013DB3B /* CareerChatViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -302,12 +311,14 @@
 			files = (
 				CDC01D62296E419500EE4D6C /* CreateAccountViewController.swift in Sources */,
 				CDC01D60296E418800EE4D6C /* LoginViewController.swift in Sources */,
+				CD72706A29799C370013DB3B /* CareerChatViewController.swift in Sources */,
 				CD7A1F412976CCD40021855B /* ResultsViewController.swift in Sources */,
 				CD7A1F452976DB940021855B /* QuestionData.swift in Sources */,
 				CD6563F52973DFD400E3EE3A /* TableViewController.swift in Sources */,
 				CDC01D5B296DDDD900EE4D6C /* OnboardingSlide.swift in Sources */,
 				CDC01D59296DDD0D00EE4D6C /* UIView+Extension.swift in Sources */,
 				CD727064297962AB0013DB3B /* CardView.swift in Sources */,
+				CD7270662979922C0013DB3B /* StemForGoodViewController.swift in Sources */,
 				CDC01D3F296DC0A100EE4D6C /* ViewController.swift in Sources */,
 				CDF049D3297487D700379B8A /* BlogViewController.swift in Sources */,
 				CDC01D5D296DE20700EE4D6C /* OnboardingCollectionViewCell.swift in Sources */,
@@ -319,6 +330,7 @@
 				CDC01D3B296DC0A100EE4D6C /* AppDelegate.swift in Sources */,
 				CD7A1F432976CCFA0021855B /* IntroductionViewController.swift in Sources */,
 				CD6563F92973E0A800E3EE3A /* Opportunity.swift in Sources */,
+				CD72706829799B0D0013DB3B /* TechTipsViewController.swift in Sources */,
 				CD6563F72973E05900E3EE3A /* TableViewDetail.swift in Sources */,
 				CDC01D3D296DC0A100EE4D6C /* SceneDelegate.swift in Sources */,
 			);
