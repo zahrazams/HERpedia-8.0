@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    var aboutNames: [String] = ["My name is Siti Zahradinar Zams and I am a 20-year-old college student who is working toward a bachelor's degree in computer science. I was born and raised in Jakarta, Indonesia. I am passionate about STEM, specifically topics within the area of technology which is reflect by the range of projects I've developedusing different programming languages, specifically Python. I have also taken part in several math competitions, making it to the preliminary round and even winning a bronze medal in the final round of the Southeast Asian Mathematical Olympiad in 2019 and the World Mathematics Invitational in 2022. As a student, I am diligent and devoted to my studies. I consistently give my all to everything I do, whether it is schoolwork, a community service project, or the pursuit of a goal."]
+    var aboutNames: [String] = ["Welcome to my page! 🌱"]
     
     var experienceNames: [String] = ["Data Scientist at Deloitte","SDE Intern at Amazon"]
     
